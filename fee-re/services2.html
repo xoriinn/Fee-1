@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwas Chaurasia | Services</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --background-color: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .services-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--secondary-color);
+        }
+
+
+        .pricing-section {
+            background-color: white;
+            margin-top: 2rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-section h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .pricing-card:hover h3 {
+            color: white;
+        }
+
+        .pricing-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+
+        @media (max-width: 768px) {
+            .services-section,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        .cta-section {
+            background-color: white;
+            margin-top: 2rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>My Services</h1>
+            <p>Transforming Ideas into Innovative Tech Solutions</p>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="container">
+            <a href="index.html#about">About</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <section class="services-section">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Full-stack web application development using modern technologies like React, Node.js, and cloud platforms.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>Cloud Solutions</h3>
+                <p>Designing scalable cloud architectures and microservices using AWS, Kubernetes, and Docker.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Data Analytics</h3>
+                <p>Creating comprehensive analytics dashboards and implementing machine learning solutions.</p>
+            </div>
+        </section>
+
+
+        <section class="pricing-section">
+            <h2>Service Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Startup Package</h3>
+                    <div class="price">$1,500</div>
+                    <p>Perfect for small projects and initial prototypes</p>
+                    <ul>
+                        <li>Web Application Development</li>
+                        <li>Basic Cloud Setup</li>
+                        <li>1 Month Support</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Professional Package</h3>
+                    <div class="price">$3,500</div>
+                    <p>Comprehensive solution for growing businesses</p>
+                    <ul>
+                        <li>Full-Stack Development</li>
+                        <li>Cloud Architecture</li>
+                        <li>3 Months Support</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Package</h3>
+                    <div class="price">$7,000</div>
+                    <p>End-to-end technological transformation</p>
+                    <ul>
+                        <li>Complex System Design</li>
+                        <li>Advanced Cloud Solutions</li>
+                        <li>6 Months Support</li>
+                        <li>Custom Machine Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Transform Your Tech Vision?</h2>
+            <p>Let's discuss how I can help bring your project to life.</p>
+            <a href="contact.html" class="cta-button">Book a Consultation</a>
+        </section>
+    </div>
+</body>
+</html>
